@@ -1,9 +1,10 @@
+import random
 #!/usr/bin/env python3
 # Created By: Sam V
 # Date: Oct 13th, 2026
 # A number guessing game with a loop to let the user try again.
 
-import random
+
 # Generate a random number between 0 and 100
 random_number = random.randint(0, 100)
 
@@ -20,3 +21,5 @@ if user_input == random_number:
     print("You Guessed Correctly!")
 else:
     print("You Guessed Wrong. The correct number was:", random_number)
+    if __name__ == "__main__":
+        print("Thanks for playing!")
